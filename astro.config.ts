@@ -11,13 +11,17 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "Cairo",
-        cssVariable: "--font-cairo",
+        name: "Albert Sans",
+        cssVariable: "--font-albert-sans",
+        fallbacks: ["sans-serif"],
+        styles: ["normal"],
+        subsets: ["latin"],
       },
       {
         provider: fontProviders.google(),
         name: "Roboto Mono",
         cssVariable: "--font-roboto-mono",
+        fallbacks: ["monospace"],
       },
     ],
   },
